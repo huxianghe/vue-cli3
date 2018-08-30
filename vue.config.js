@@ -6,7 +6,15 @@ module.exports = {
   },
   productionSourceMap: false,
   transpileDependencies: [],
-  configureWebpack: {},
+  configureWebpack: config => {
+    //
+  },
+  chainWebpack: config => {
+    config.resolve.alias
+      .set('assets', '@/assets')
+      .set('css', '@/assets/css')
+      .set('data', '@/assets/data')
+  },
   devServer: {
     host: 'localhost',
     port: 2019,

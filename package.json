@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vue-cli-service serve --copy",
+    "build:test": "vue-cli-service build --modern --report --mode testing",
+    "build": "vue-cli-service build --modern --report",
+    "lint": "vue-cli-service lint",
+    "inspect": "vue-cli-service inspect > webpack.config.js"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
