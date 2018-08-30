@@ -4,6 +4,7 @@
     "VuePreset": {
       "useConfigFiles": true,
       "plugins": {
+        "@vue/cli-service": {},
         "@vue/cli-plugin-babel": {},
         "@vue/cli-plugin-pwa": {},
         "@vue/cli-plugin-eslint": {
